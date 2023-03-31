@@ -3,3 +3,70 @@ nav#main {
     color: $white;
   }
 }
+/* HEADINGS */
+.heading1 {
+  font-size: clamp(35px, 2.5vw, 48px);
+  line-height: 1.42;
+  font-weight: 700;
+
+  padding-bottom: 22px;
+}
+.heading2 {
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 700;
+}
+.heading3 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+
+  padding-bottom: 24px;
+}
+.heading4 {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.subtitle {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+/* INFO CARD */
+.info-card-title {
+  font-size: 28px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.info-card-text {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.info-card-link {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+/* INFOGRAPHICS */
+.infographics-number {
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 700;
+}
+
+/* BUTTON */
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}

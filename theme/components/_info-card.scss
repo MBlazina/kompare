@@ -1,0 +1,42 @@
+.info-cards {
+  display: block;
+  gap: 9px;
+  flex-wrap: wrap;
+  @media screen and (min-width: $break-mobile) {
+    display: flex;
+  }
+}
+.info-card {
+  flex: 1;
+  background: $secondary;
+  padding: 1px;
+  box-shadow: 0px 0px 34.8632px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+.info-card-content {
+  background: $white;
+  border-radius: 16px;
+  padding: 26px;
+  display: flex;
+  justify-content: center;
+}
+.info-card-title {
+  color: $primary;
+  text-align: left;
+}
+.info-card-text {
+  text-align: left;
+  width: min-content;
+}
+.info-card-image {
+  margin-right: 15px;
+}
+.info-card-link-container {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-card-link {
+  color: $white;
+}

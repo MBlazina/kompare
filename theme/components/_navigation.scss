@@ -3,7 +3,7 @@
 nav#main {
   position: fixed;
   right: 0;
-  top: var(--header-height);
+  top: var(--header-height-sp);
   /* padding-top: calc(var(--header-height) / 2 + (var(--bar-height) * 3 + var(--menu-bars-gap) * 2)); */
 
   right: -100%;
@@ -11,7 +11,7 @@ nav#main {
   background: $primary;
   width: 100%;
   transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
-
+  min-height: 100%;
   @media screen and (min-width: $break-mobile) {
     position: relative;
     padding: 0;
@@ -20,6 +20,7 @@ nav#main {
     width: auto;
     top: 0;
     right: 0;
+    opacity: 1;
   }
 
   ul {
@@ -34,7 +35,7 @@ nav#main {
   li {
     text-transform: uppercase;
     padding: 0 15px;
-
+    text-align: center;
     @media screen and (min-width: $break-mobile) {
       color: $white;
     }
@@ -43,11 +44,11 @@ nav#main {
       color: $secondary;
       display: flex;
       align-items: center;
-
+      justify-content: center;
       &::before {
         content: "";
         display: block;
-        background-image: url("/public/icons/phone-solid.svg");
+        background-image: url("/icons/phone-solid.svg");
         background-repeat: no-repeat;
         background-position: left;
         height: 20px;

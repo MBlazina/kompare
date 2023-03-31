@@ -1,13 +1,17 @@
 @import "./navigation";
 :root {
   --header-height: 95px;
+  --header-height-sp: 60px;
 }
 header {
   background-color: $primary;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: var(--header-height);
+  height: var(--header-height-sp);
+  @media screen and (min-width: $break-mobile) {
+    height: var(--header-height);
+  }
 }
 
 .logo {
