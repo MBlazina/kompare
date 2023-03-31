@@ -1,0 +1,64 @@
+:root {
+  --bar-width: 30px;
+  --bar-height: 3px;
+  --menu-bars-gap: 6px;
+  --hamburger-menu-height: calc(var(--bar-height) * 3 + var(--menu-bars-gap) * 2);
+}
+
+.mobile-menu {
+  .menu-icon {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--menu-bars-gap);
+    z-index: 2;
+    position: relative;
+    width: max-content;
+    @media screen and (min-width: $break-mobile) {
+      display: none;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  input {
+    display: none;
+    appearance: none;
+    outline: none;
+  }
+
+  .menu-bar {
+    position: relative;
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: $white;
+    border-radius: 9999px;
+    z-index: 2;
+    transition: rotate 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transform-origin: left center;
+  }
+}
+.menu-toggle:checked {
+  ~ .menu-icon {
+    .menu-bar {
+      width: calc(var(--hamburger-menu-height) * 1.41421356237);
+    }
+    .menu-bar.center {
+      opacity: 0;
+    }
+    .menu-bar.top {
+      rotate: 45deg;
+      translate: 0 calc(var(--bar-height) / -2);
+    }
+    .menu-bar.bottom {
+      rotate: -45deg;
+      translate: 0 calc(var(--bar-height) / 2);
+    }
+  }
+  & ~ nav#main {
+    right: 0;
+    opacity: 1;
+  }
+}

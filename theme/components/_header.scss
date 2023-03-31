@@ -1,0 +1,15 @@
+@import "./navigation";
+:root {
+  --header-height: 95px;
+}
+header {
+  background-color: $primary;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: var(--header-height);
+}
+
+.logo {
+  max-width: 150px;
+}
