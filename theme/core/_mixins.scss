@@ -1,1 +1,14 @@
 $break-mobile: 576px;
+$break-max: 1920px;
+
+$fluid-width-min: 567;
+$fluid-width-max: 1920;
+
+//FLUID TYPOGRAPHY FUNCTION
+@function fluidVal($valMin, $valMax) {
+  $valMin-px: $valMin * 1px;
+  $valMax-px: $valMax * 1px;
+  $width-min-px: $fluid-width-min * 1px;
+  @return clamp(#{$valMin-px}, calc(#{$valMin-px} + (#{$valMin} - #{$valMax}) * ((100vw - #{$width-min-px}) / (#{$fluid-width-min} - #{$fluid-width-max}))), #{$valMax-px});
+}
+/* font-size: calc([value-min] + ([value-max] - [value-min]) * ((100vw - [breakpoint-min]) / ([breakpoint-max] - [breakpoint-min]))); */

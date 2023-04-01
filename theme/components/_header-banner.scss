@@ -1,16 +1,24 @@
 .header-banner {
   background: $primary;
   text-align: center;
-  padding-top: 71px;
-  padding-bottom: 78px;
+  padding: 20px 0;
+  @media screen and (min-width: $break-mobile) {
+    padding: 70px 0;
+  }
+
   .heading4 {
     color: $secondary;
   }
+
   .heading1 {
     color: $white;
   }
+
   .subtitle {
     color: $secondary;
-    padding-bottom: 72px;
+    margin-bottom: 20px;
+    @media screen and (min-width: $break-mobile) {
+      margin-bottom: 72px;
+    }
   }
 }

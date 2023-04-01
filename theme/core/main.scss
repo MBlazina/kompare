@@ -1,7 +1,9 @@
+@import "./mixins";
+@import "./base";
 @import "./base";
 @import "./colors";
 @import "./fonts";
-@import "./mixins";
+@import "./grid";
 
 @import "../components/index.scss";
 @import "../utils/index.scss";

@@ -5,7 +5,8 @@ nav#main {
 }
 /* HEADINGS */
 .heading1 {
-  font-size: clamp(35px, 2.5vw, 48px);
+  /* font-size: clamp(24px, 2.5vw, 48px); */
+  font-size: fluidVal(24, 48);
   line-height: 1.42;
   font-weight: 700;
 
@@ -24,8 +25,9 @@ nav#main {
   padding-bottom: 24px;
 }
 .heading4 {
-  font-size: 28px;
-  line-height: 40px;
+  /* font-size: 28px; */
+  font-size: fluidVal(14, 28);
+  line-height: 1.43;
   font-weight: 700;
 }
 
@@ -35,8 +37,10 @@ nav#main {
   font-weight: 400;
 }
 .subtitle {
-  font-size: 18px;
-  line-height: 24px;
+  /* font-size: 18px; */
+  font-size: fluidVal(9, 18);
+
+  line-height: 1.33;
   font-weight: 600;
 }
 

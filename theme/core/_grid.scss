@@ -1,0 +1,25 @@
+/* WIDTH */
+.col-1 {
+  width: calc(1 / 12 * 100%);
+}
+.col-6 {
+  width: calc(6 / 12 * 100%);
+}
+.col-10 {
+  width: calc(10 / 12 * 100%);
+}
+.col-dt-10 {
+  @media screen and (min-width: $break-mobile) {
+    width: calc(10 / 12 * 100%);
+  }
+}
+
+/* OFFSET */
+.offset-1 {
+  margin-left: calc(1 / 12 * 100%);
+}
+.offset-dt-1 {
+  @media screen and (min-width: $break-mobile) {
+    margin-left: calc(1 / 12 * 100%);
+  }
+}
