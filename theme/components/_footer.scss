@@ -1,0 +1,39 @@
+footer {
+  background: $primary;
+  padding: 70px 0;
+  @media screen and (max-width: $break-tb) {
+    padding: 35px 0;
+  }
+  display: block;
+  nav {
+    > ul.flex {
+      gap: 15px;
+
+      @media screen and (max-width: $break-tb) {
+        display: block;
+        > li {
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+    li {
+      color: $white;
+
+      > p {
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 1.44;
+        font-weight: 700;
+      }
+      > ul {
+        margin-bottom: 40px;
+        li {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

@@ -8,6 +8,11 @@
 .col-10 {
   width: calc(10 / 12 * 100%);
 }
+.col-dt-2 {
+  @media screen and (min-width: $break-mobile) {
+    width: calc(2 / 12 * 100%);
+  }
+}
 .col-dt-4 {
   @media screen and (min-width: $break-mobile) {
     width: calc(4 / 12 * 100%);
