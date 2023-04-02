@@ -11,6 +11,9 @@ body {
   width: 100%;
   font-family: "Poppins", sans-serif;
 }
+body {
+  background: $lightgrey;
+}
 img {
   max-width: 100%;
   align-self: center;
