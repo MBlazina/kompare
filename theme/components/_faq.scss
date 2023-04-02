@@ -1,0 +1,42 @@
+.faq-container {
+  gap: 15px;
+  @media screen and (max-width: $break-tb) {
+    flex-direction: column;
+  }
+  .faq-item {
+    &-toggle {
+      display: none;
+      appearance: none;
+      outline: none;
+      &:checked {
+        ~ .faq-item-content {
+          max-height: 9999px;
+          visibility: visible;
+        }
+        ~ .accordionIcon {
+          background: red;
+        }
+      }
+    }
+    &-title {
+      background: green;
+    }
+    &-content {
+      max-height: 0;
+      visibility: hidden;
+      transition: max-height 0.3s ease-in-out;
+    }
+  }
+  .leftAccordion,
+  .rightAccordion {
+    width: 100%;
+  }
+  .accordion-title {
+    display: flex;
+  }
+  .accordionIcon {
+    width: 24px;
+    height: 55px;
+    display: inline-block;
+  }
+}
