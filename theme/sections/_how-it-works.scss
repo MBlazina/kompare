@@ -1,0 +1,14 @@
+.how-it-works {
+  > .container {
+    gap: 61px;
+  }
+  @media screen and (max-width: $break-mobile) {
+    .container {
+      flex-direction: column;
+      img {
+        order: 2;
+      }
+    }
+  }
+  margin-bottom: 85px;
+}

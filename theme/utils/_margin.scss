@@ -1,0 +1,18 @@
+.margin-bottom-dt-20 {
+  margin-bottom: 10px;
+  @media screen and (min-width: $break-mobile) {
+    margin-bottom: 20px;
+  }
+}
+.margin-bottom-dt-40 {
+  margin-bottom: 20px;
+  @media screen and (min-width: $break-mobile) {
+    margin-bottom: 40px;
+  }
+}
+.margin-bottom-dt-75 {
+  margin-bottom: 40px;
+  @media screen and (min-width: $break-mobile) {
+    margin-bottom: 75px;
+  }
+}

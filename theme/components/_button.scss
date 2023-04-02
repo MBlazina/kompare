@@ -1,0 +1,33 @@
+.button {
+  background: none;
+  color: $secondary;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 0 0 0 3px $secondary;
+  padding: 0 65px;
+  @media screen and (max-width: $break-mobile) {
+    padding: 0 30px;
+  }
+  min-height: 44px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 19px;
+    height: 19px;
+    background-image: url("/icons/arrow-right-orange.svg");
+    margin-left: 8px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    background: $secondary;
+    color: $white;
+
+    &::after {
+      background-image: url("/icons/arrow-right-white.svg");
+    }
+  }
+}

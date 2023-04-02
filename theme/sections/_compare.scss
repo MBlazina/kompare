@@ -1,0 +1,11 @@
+.compare {
+  > .container {
+    gap: 61px;
+  }
+  @media screen and (max-width: $break-mobile) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  margin-bottom: 60px;
+}

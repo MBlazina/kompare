@@ -8,6 +8,21 @@
 .col-10 {
   width: calc(10 / 12 * 100%);
 }
+.col-dt-4 {
+  @media screen and (min-width: $break-mobile) {
+    width: calc(4 / 12 * 100%);
+  }
+}
+.col-dt-5 {
+  @media screen and (min-width: $break-mobile) {
+    width: calc(5 / 12 * 100%);
+  }
+}
+.col-dt-6 {
+  @media screen and (min-width: $break-mobile) {
+    width: calc(6 / 12 * 100%);
+  }
+}
 .col-dt-10 {
   @media screen and (min-width: $break-mobile) {
     width: calc(10 / 12 * 100%);
