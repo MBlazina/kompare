@@ -1,7 +1,14 @@
+.faq {
+  margin-bottom: 75px;
+  .heading2 {
+    margin-bottom: 23px;
+  }
+}
 .faq-container {
-  gap: 15px;
+  gap: 24px;
   @media screen and (max-width: $break-tb) {
     flex-direction: column;
+    gap: 0;
   }
   .faq-item {
     &-toggle {
@@ -12,14 +19,19 @@
         ~ .faq-item-content {
           max-height: 9999px;
           visibility: visible;
+          padding-left: 39px;
         }
-        ~ .accordionIcon {
-          background: red;
+        ~ .accordion-title {
+          border-bottom: none;
+          .accordionIcon::after {
+            rotate: 0deg;
+            opacity: 0;
+          }
         }
       }
     }
     &-title {
-      background: green;
+      flex: 1;
     }
     &-content {
       max-height: 0;
@@ -33,10 +45,34 @@
   }
   .accordion-title {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    border-bottom: 1px solid $mediumgrey;
   }
   .accordionIcon {
+    margin-right: 16px;
+    flex-grow: 0;
     width: 24px;
-    height: 55px;
-    display: inline-block;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      display: block;
+      position: absolute;
+      background: $primary;
+      border-radius: 9999px;
+    }
+    &::after {
+      opacity: 1;
+      transition: rotate 0.2s ease-in-out, opacity 0.2s ease-in-out;
+      rotate: 90deg;
+    }
   }
 }

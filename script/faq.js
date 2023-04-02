@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     labelContent += '<input class="faq-item-toggle" type="checkbox" />'
     labelContent += '<div class="accordion-title">'
     labelContent += '<div class="accordionIcon"></div>'
-    labelContent += `<p class="faq-item-title">${faqItem.title}</p>`
+    labelContent += `<p class="faq-item-title .text bold">${faqItem.title}</p>`
     labelContent += '</div>'
     labelContent += `<div class="faq-item-content">${faqItem.content}</div>`
 
