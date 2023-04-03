@@ -4,6 +4,12 @@
     margin-bottom: 20px;
   }
 }
+.margin-bottom-dt-30 {
+  margin-bottom: 20px;
+  @media screen and (min-width: $break-mobile) {
+    margin-bottom: 30px;
+  }
+}
 .margin-bottom-dt-40 {
   margin-bottom: 20px;
   @media screen and (min-width: $break-mobile) {
