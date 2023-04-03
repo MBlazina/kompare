@@ -10,6 +10,12 @@
     margin-bottom: 40px;
   }
 }
+.margin-bottom-dt-50 {
+  margin-bottom: 20px;
+  @media screen and (min-width: $break-mobile) {
+    margin-bottom: 50px;
+  }
+}
 .margin-bottom-dt-75 {
   margin-bottom: 40px;
   @media screen and (min-width: $break-mobile) {

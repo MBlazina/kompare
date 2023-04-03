@@ -24,6 +24,7 @@
   }
 }
 .col-dt-6 {
+  width: 100%;
   @media screen and (min-width: $break-mobile) {
     width: calc(6 / 12 * 100%);
   }
