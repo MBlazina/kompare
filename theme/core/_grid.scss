@@ -50,3 +50,8 @@
     margin-left: calc(2 / 12 * 100%);
   }
 }
+.offset-dt-4 {
+  @media screen and (min-width: $break-mobile) {
+    margin-left: calc(4 / 12 * 100%);
+  }
+}
