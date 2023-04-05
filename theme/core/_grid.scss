@@ -15,10 +15,10 @@
   }
 }
 .col-dt-6 {
-  width: 100%;
   @media screen and (min-width: $break-mobile) {
     width: calc(6 / 12 * 100%);
   }
+  width: 100%;
 }
 .col-dt-8 {
   @media screen and (min-width: $break-mobile) {
@@ -48,6 +48,12 @@
 .offset-dt-2 {
   @media screen and (min-width: $break-mobile) {
     margin-left: calc(2 / 12 * 100%);
+  }
+}
+.offset-dt-3 {
+  margin-left: 0;
+  @media screen and (min-width: $break-mobile) {
+    margin-left: calc(3 / 12 * 100%);
   }
 }
 .offset-dt-4 {

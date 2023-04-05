@@ -1,9 +1,9 @@
 .how-it-works {
-  > .container {
+  > div {
     gap: 61px;
   }
   @media screen and (max-width: $break-mobile) {
-    .container {
+    > div {
       flex-direction: column;
       img {
         order: 2;

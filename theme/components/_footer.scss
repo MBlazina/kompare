@@ -36,4 +36,49 @@ footer {
       }
     }
   }
+  .social {
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 40px;
+    @media only screen and (max-width: $break-tb) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  .payment {
+    margin-bottom: 16px;
+  }
+  .banking {
+    width: 264px;
+    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    margin-bottom: 40px;
+    .net-banking {
+      grid-column: span 4;
+      position: relative;
+      background-image: url("/icons/bank-cards/internet-banking.png");
+      background-size: cover;
+      height: 28px;
+      line-height: 28px;
+      padding-left: 18px;
+    }
+    .internet-banking-img {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+  }
+  .captcha {
+    margin-bottom: 40px;
+  }
+  .hanfa {
+    margin-bottom: 16px;
+  }
+  p.hanfa {
+    margin-bottom: 24px;
+  }
 }

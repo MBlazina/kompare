@@ -5,7 +5,6 @@ nav#main {
 }
 /* HEADINGS */
 .heading1 {
-  /* font-size: clamp(24px, 2.5vw, 48px); */
   @media screen and (max-width: $break-mobile) {
     font-size: calc(48px * 0.7);
   }
@@ -16,9 +15,6 @@ nav#main {
   padding-bottom: 22px;
 }
 .heading2 {
-  /* @media screen and (max-width: $break-mobile) {
-    font-size: 20px;
-  } */
   @media screen and (max-width: $break-mobile) {
     font-size: calc(40px * 0.7);
   }
@@ -37,27 +33,30 @@ nav#main {
   padding-bottom: 24px;
 }
 .heading4 {
-  /* font-size: 28px; */
   font-size: fluidVal(14, 28);
   line-height: 1.43;
   font-weight: 700;
 }
+.heading6 {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
 
 .text {
-  @media screen and (max-width: $break-mobile) {
-    font-size: calc(16px * 0.7);
-  }
-  font-size: fluidVal(8, 16);
-  line-height: 1.5;
-  font-weight: 400;
+  font-size: 16px;
+  /*  @media screen and (min-width: $break-mobile) {
+    font-size: fluidVal(8, 16);
+    line-height: 1.5;
+    font-weight: 400;
+  } */
 }
 .subtitle {
-  /* font-size: 18px; */
   @media screen and (max-width: $break-mobile) {
     font-size: calc(18px * 0.7);
   }
-  font-size: fluidVal(9, 18);
-
+  /*  font-size: fluidVal(9, 18); */
+  font-size: 18px;
   line-height: 1.33;
   font-weight: 600;
 }
@@ -79,6 +78,11 @@ nav#main {
   font-size: 14px;
   line-height: 24px;
   font-weight: 600;
+}
+.disclaimer {
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 /* INFOGRAPHICS */

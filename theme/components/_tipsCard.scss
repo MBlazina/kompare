@@ -1,0 +1,39 @@
+.tips-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+  row-gap: 32px;
+  margin-bottom: 50px;
+  @media screen and (max-width: $break-tb) {
+    grid-template-columns: 1fr;
+  }
+}
+.tips-card {
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 16px;
+
+  &:hover {
+    img {
+      filter: none;
+    }
+    .title {
+      color: $primary;
+    }
+  }
+  img {
+    /* align-self: flex-start; */
+    filter: grayscale(100%);
+    @media screen and (max-width: $break-tb) {
+      width: 30%;
+      align-self: flex-start;
+    }
+  }
+  &-content {
+    padding: 25px 20px;
+    .title {
+      margin-bottom: 10px;
+    }
+  }
+}

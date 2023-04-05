@@ -31,4 +31,19 @@ form button {
       background-image: url("/icons/arrow-right-white.svg");
     }
   }
+  &.learn-more {
+    color: $primary;
+    box-shadow: 0 0 0 3px $primary;
+    &::after {
+      background-image: url("/icons/arrow-right-purple.svg");
+    }
+    &:hover {
+      background: $primary;
+      color: $white;
+
+      &::after {
+        background-image: url("/icons/arrow-right-white.svg");
+      }
+    }
+  }
 }
